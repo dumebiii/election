@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    /* background: #12214e; */
+    background: url(../image/courses_bg.png);
+
+    place-content: center;
+    display: grid;
+    z-index: 9;
+    position: fixed;
+}
+nav img{
+    width: 70px;
+}
+.o{
+    width: 100%;
+    height: 15vh;
+    background: #12214e; 
+}
+
+/* banner Text */
+.banner_text{
+    width: 100%;
+    /* height: 55vh; */
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid crimson; */
+    /* background: crimson; */
+    margin-bottom: 10px;
+}
+.banner_text img{
+    /* background: crimson; */
+    /* margin: 10px; */
+    position: relative;
+    /* left: 50px; */
+    width: 180px;
+}
+
+.banner_text b{
+    font-size: 33px;
+    color: #12214e;
+    margin-top: 10px;
+    font-weight: 500;
+}
+span{
+    color: #ea3325;
+    font-weight: 700;
+}
+
+.container .list{
+    /* margin-top: 40px; */
+    display: grid;
+    place-content: center;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* max-width: 650px; */
+    /* background: green; */
+}
+.form-element{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* background: orange; */
+}
+.form-element input{
+    display: none;
+}
+.form-element label{
+    /* width: 100%; */
+    /* max-width: 650px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    /* background: #ea3325; */
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 200ms ease-in-out;
+
+}
+.form-element .title{
+    font-size: 15px;
+    color: #12214e;
+    padding: 5px 0px;
+    transition: all 200ms ease-in-out;
+    font-weight: 700;
+}
+.form-element label::before{
+    content: "✔";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0px;
+    left: 0px;
+    background: #ea3325;
+    text-align: center;
+    /* border-bottom-right-radius: 10%; */
+    /* line-height: 18px; */
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 200ms ease-in-out;
+}
+.form-element input:checked + label::before{
+    opacity: 1;
+    transform: scale(0.8);
+}
+.form-element input:checked + label .title{
+ color: #fff;
+}
+.form-element input:checked + label{
+    /* border: 1px solid #12214e; */
+    background: #ea3325;
+   }
+
+
+
+
+   .cand{
+       width: 100%;
+       /* height: 100vh; */
+       /* border: 1px solid crimson; */
+       /* background: #12214e; */
+       background: url(../image/courses_bg.png);
+   }
+   .title_header{
+       /* margin-top: 10px; */
+       /* margin-bottom: 10px; */
+       /* border: 1px solid green; */
+       text-align: center;
+       padding: 10px;
+   }
+   .title_header h2{
+       font-size: 35px;
+       color: #fff;
+   }
+   .inner_cand{
+       width: 100%;
+       /* height: 50vh; */
+       padding: 10px;
+       margin-top: 5px;
+       /* border: 1px solid red; */
+       display: flex;
+       /* grid-template-columns: repeat(1,1fr); */
+       /* place-cont    ent: center; */
+       justify-content: center;
+       align-items: center;
+       grid-gap: 30px;
+   }
+   .cand_img{
+       width: 20%;
+       height: 51.5vh;
+       /* border: 1px solid goldenrod; */
+       overflow: hidden;
+       background: white;
+    /* box-shadow: 0px 5px 20px 2px rgba(163, 160, 160, 0.2); */
+   }
+   
+   .inner_img{
+       width: 100%;
+       height: 33vh;
+       overflow: hidden;
+       /* background: orange; */
+   }
+   .inner_img img{
+       width: 100%;
+       height: 100%;
+       transition: 0.4s all ease;
+   }
+   .cand_img:hover .inner_img img{
+       transform: scale(1.1);
+   }
+   .cand_text{
+       width: 100%;
+       /* height: 5vh; */
+       display: grid;
+       text-align: center;
+       align-items: center;
+       padding: 8px;
+       /* border: 1px solid red; */
+       /* background: red; */
+   }
+   .cand_text b{
+       font-size: 25px;
+       color: #12214e;
+   }
+
+
+
+
+   .main{
+       width: 100%;
+       height: 100vh;
+       background: red;
+       display: flex;
+   }
+   .first_section{
+       width: 50%;
+       height: 40vh;
+       background: #fff;
+       position: fixed;
+   }
+   .sec_section{
+       width: 50%;
+       height: 80vh;
+       background: orange;
+       /* position: relative; */
+   }
